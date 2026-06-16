@@ -1,66 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PhysiqueIQ</title>
-    <style>
-        body{
-            background:black;
-            color:white;
-            font-family:Arial,sans-serif;
-            margin:0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        nav{
-            display:flex;
-            justify-content:space-between;
-            padding:20px 50px;
-        }
+<title>PhysiqueIQ</title>
 
-        .logo{
-            color:#ff2d3d;
-            font-size:30px;
-            font-weight:bold;
-        }
+<style>
 
-        .hero{
-            padding:100px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        h1{
-            font-size:80px;
-            line-height:0.95;
-            margin:0;
-        }
+body{
+    background:#050505;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        .red{
-            color:#ff2d3d;
-        }
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 60px;
+}
 
-        p{
-            font-size:24px;
-            max-width:700px;
-            color:#cccccc;
-        }
+.logo{
+    color:#ff2d3d;
+    font-size:38px;
+    font-weight:bold;
+}
 
-        button{
-            background:#ff2d3d;
-            color:white;
-            border:none;
-            padding:15px 35px;
-            border-radius:10px;
-            font-size:20px;
-            cursor:pointer;
-        }
-    </style>
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#bdbdbd;
+    font-size:18px;
+}
+
+.actions{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.login{
+    color:white;
+    text-decoration:none;
+}
+
+.start-btn{
+    background:#ff2d3d;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.hero{
+    padding:80px;
+}
+
+.badge{
+    display:inline-block;
+    color:#ff2d3d;
+    border:1px solid #ff2d3d;
+    padding:10px 20px;
+    border-radius:50px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:110px;
+    line-height:0.9;
+}
+
+.red{
+    color:#ff2d3d;
+}
+
+.hero p{
+    margin-top:30px;
+    font-size:30px;
+    max-width:800px;
+    color:#cfcfcf;
+}
+
+.btn{
+    margin-top:40px;
+    background:#ff2d3d;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    border-radius:12px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.features{
+    padding:80px;
+}
+
+.features h2{
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    width:300px;
+}
+
+.card h3{
+    color:#ff2d3d;
+    margin-bottom:15px;
+}
+
+.footer{
+    text-align:center;
+    padding:50px;
+    color:#888;
+}
+
+</style>
 </head>
 
 <body>
 
-<nav>
-    <div class="logo">PHYSIQUEIQ</div>
+<nav class="navbar">
+
+<div class="logo">
+PHYSIQUEIQ
+</div>
+
+<div class="menu">
+<a href="#">Features</a>
+<a href="#">How It Works</a>
+<a href="#">Pricing</a>
+</div>
+
+<div class="actions">
+<a href="#" class="login">Login</a>
+<button class="start-btn">Get Started</button>
+</div>
+
 </nav>
 
 <section class="hero">
+
+<div class="badge">
+AI-POWERED COACHING
+</div>
 
 <h1>TRAIN SMARTER.</h1>
 
@@ -74,9 +179,40 @@ AI-powered fitness coaching for workouts,
 nutrition, fat loss, muscle gain and progress tracking.
 </p>
 
-<button>Start Free</button>
+<button class="btn">
+Start Free
+</button>
 
 </section>
+
+<section class="features">
+
+<h2>Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>AI Workout Plans</h3>
+<p>Custom training programs based on your goals.</p>
+</div>
+
+<div class="card">
+<h3>Nutrition Tracking</h3>
+<p>Track calories, macros and meals easily.</p>
+</div>
+
+<div class="card">
+<h3>Progress Analytics</h3>
+<p>Monitor weight, strength and body composition.</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
+© 2025 PhysiqueIQ. All rights reserved.
+</div>
 
 </body>
 </html>
